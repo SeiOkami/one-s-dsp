@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e05f3574-8f47-4e05-8fe0-93a9ed1cbf9a" extendedConfigurationObject="0d89036c-af6e-4709-847c-0dab74a33d72">
+  <producedTypes>
+    <objectType typeId="973693e5-caf4-4d59-9efe-afc499ffd219" valueTypeId="731c95ef-8d56-4b49-8289-75253801d03c"/>
+    <refType typeId="f4a126d7-8999-430b-9f56-7f23184c5650" valueTypeId="57b3304f-9103-4cbe-bbae-ee35121ebae9"/>
+    <selectionType typeId="4047b4ac-8cfd-4712-b91e-659719386eb9" valueTypeId="baeda1b4-08a8-4af0-a6f3-8b2c4bc223d7"/>
+    <listType typeId="ad1735a2-7c31-4999-900c-d0eb2d7310df" valueTypeId="04d32c69-2244-4253-a3e7-15764b8997c8"/>
+    <managerType typeId="f87419cc-9000-4647-86ab-7f7d2dcde868" valueTypeId="23d72e70-be28-4afb-ac5d-aff06d245ba1"/>
+  </producedTypes>
+  <name>ПрофилиКлючевыхОпераций</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <useStandardCommands>true</useStandardCommands>
+  <checkUnique>true</checkUnique>
+</mdclass:Catalog>
