@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f32eae9c-bad0-47b1-823f-ba3cca289a6b">
+  <name>ДСП_ОценкаПроизводительности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценка производительности (ДСП)</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <parentSubsystem>Subsystem.ДСП_ДоработкиСтандартныхПодсистем</parentSubsystem>
+</mdclass:Subsystem>

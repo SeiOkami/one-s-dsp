@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5135711c-3833-41df-b541-d019ad3935a6">
+  <name>ДСП_ДоработкиСтандартныхПодсистем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доработки стандартных подсистем</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.ДСП_Настройки</content>
+  <content>CommonModule.ДСП_Настройки</content>
+  <content>CommonModule.ДСП_НастройкиВызовСервера</content>
+  <content>CommonModule.ДСП_НастройкиКлиентПовтИсп</content>
+  <content>CommonModule.ДСП_НастройкиКлиентСервер</content>
+  <content>CommonModule.ДСП_НастройкиПовтИсп</content>
+  <content>CommonModule.ДСП_ОбщееКлиентСервер</content>
+  <content>CommonModule.ДСП_ТипыКлиентСервер</content>
+  <subsystems>ДСП_ОценкаПроизводительности</subsystems>
+</mdclass:Subsystem>

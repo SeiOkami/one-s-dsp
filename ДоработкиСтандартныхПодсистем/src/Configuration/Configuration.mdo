@@ -9,10 +9,10 @@
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
     <defaultRunMode>Checked</defaultRunMode>
     <usePurposes>Checked</usePurposes>
+    <managedApplicationModule>Extended</managedApplicationModule>
     <defaultLanguage>Checked</defaultLanguage>
     <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
     <compatibilityMode>Checked</compatibilityMode>
-    <defaultRoles>Extended</defaultRoles>
   </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="66b3002c-9aa1-49b5-b605-7904bc1a36f9"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="5917756c-1314-4f85-8e58-89b6874c0139"/>
@@ -28,7 +28,6 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
-  <defaultRoles>Role.ДСП_ОсновнаяРоль</defaultRoles>
   <vendor>https://github.com/SeiOkami</vendor>
   <version>0.0.1</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
@@ -42,8 +41,25 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
-  <roles>Role.ДСП_ОсновнаяРоль</roles>
+  <subsystems>Subsystem.ДСП_ДоработкиСтандартныхПодсистем</subsystems>
+  <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
+  <styleItems>StyleItem.ИтогиФонГруппы</styleItems>
+  <commonPictures>CommonPicture.ВыбратьВариантОтчета</commonPictures>
+  <commonPictures>CommonPicture.ОтменитьДействие</commonPictures>
+  <commonPictures>CommonPicture.ПовторитьДействие</commonPictures>
+  <commonPictures>CommonPicture.СохранитьКак</commonPictures>
+  <commonPictures>CommonPicture.Сумма</commonPictures>
+  <commonPictures>CommonPicture.ЭлектронноеПисьмо</commonPictures>
+  <commonModules>CommonModule.ДСП_Настройки</commonModules>
+  <commonModules>CommonModule.ДСП_НастройкиВызовСервера</commonModules>
+  <commonModules>CommonModule.ДСП_НастройкиКлиентПовтИсп</commonModules>
+  <commonModules>CommonModule.ДСП_НастройкиКлиентСервер</commonModules>
+  <commonModules>CommonModule.ДСП_НастройкиПовтИсп</commonModules>
+  <commonModules>CommonModule.ДСП_ОбщееКлиентСервер</commonModules>
+  <commonModules>CommonModule.ДСП_ТипыКлиентСервер</commonModules>
+  <commonForms>CommonForm.ФормаОтчета</commonForms>
   <catalogs>Catalog.КлючевыеОперации</catalogs>
   <catalogs>Catalog.ПрофилиКлючевыхОпераций</catalogs>
+  <dataProcessors>DataProcessor.ДСП_Настройки</dataProcessors>
   <dataProcessors>DataProcessor.ДСП_ОценкаПроизводительности</dataProcessors>
 </mdclass:Configuration>
