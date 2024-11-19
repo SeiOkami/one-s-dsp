@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd86f2ed-7e29-4d1f-aec9-298afe114558">
-  <name>ДСП_НастройкиПовтИсп</name>
+  <name>ДСП_СерверПовтИсп</name>
   <synonym>
     <key>ru</key>
-    <value>Настройки повт исп (ДСП)</value>
+    <value>Общий модуль повт исп (ДСП)</value>
   </synonym>
   <server>true</server>
   <externalConnection>true</externalConnection>

@@ -50,13 +50,11 @@
   <commonPictures>CommonPicture.СохранитьКак</commonPictures>
   <commonPictures>CommonPicture.Сумма</commonPictures>
   <commonPictures>CommonPicture.ЭлектронноеПисьмо</commonPictures>
-  <commonModules>CommonModule.ДСП_Настройки</commonModules>
-  <commonModules>CommonModule.ДСП_НастройкиВызовСервера</commonModules>
-  <commonModules>CommonModule.ДСП_НастройкиКлиентПовтИсп</commonModules>
-  <commonModules>CommonModule.ДСП_НастройкиКлиентСервер</commonModules>
-  <commonModules>CommonModule.ДСП_НастройкиПовтИсп</commonModules>
-  <commonModules>CommonModule.ДСП_ОбщееКлиентСервер</commonModules>
-  <commonModules>CommonModule.ДСП_ТипыКлиентСервер</commonModules>
+  <commonModules>CommonModule.ДСП_ВызовСервера</commonModules>
+  <commonModules>CommonModule.ДСП_КлиентПовтИсп</commonModules>
+  <commonModules>CommonModule.ДСП_КлиентСервер</commonModules>
+  <commonModules>CommonModule.ДСП_Сервер</commonModules>
+  <commonModules>CommonModule.ДСП_СерверПовтИсп</commonModules>
   <commonForms>CommonForm.ФормаОтчета</commonForms>
   <catalogs>Catalog.КлючевыеОперации</catalogs>
   <catalogs>Catalog.ПрофилиКлючевыхОпераций</catalogs>

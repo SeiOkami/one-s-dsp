@@ -8,12 +8,10 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>DataProcessor.ДСП_Настройки</content>
-  <content>CommonModule.ДСП_Настройки</content>
-  <content>CommonModule.ДСП_НастройкиВызовСервера</content>
-  <content>CommonModule.ДСП_НастройкиКлиентПовтИсп</content>
-  <content>CommonModule.ДСП_НастройкиКлиентСервер</content>
-  <content>CommonModule.ДСП_НастройкиПовтИсп</content>
-  <content>CommonModule.ДСП_ОбщееКлиентСервер</content>
-  <content>CommonModule.ДСП_ТипыКлиентСервер</content>
+  <content>CommonModule.ДСП_Сервер</content>
+  <content>CommonModule.ДСП_ВызовСервера</content>
+  <content>CommonModule.ДСП_КлиентПовтИсп</content>
+  <content>CommonModule.ДСП_КлиентСервер</content>
+  <content>CommonModule.ДСП_СерверПовтИсп</content>
   <subsystems>ДСП_ОценкаПроизводительности</subsystems>
 </mdclass:Subsystem>
