@@ -10,8 +10,7 @@
   <content>DataProcessor.ДСП_Настройки</content>
   <content>CommonModule.ДСП_Сервер</content>
   <content>CommonModule.ДСП_ВызовСервера</content>
-  <content>CommonModule.ДСП_КлиентПовтИсп</content>
   <content>CommonModule.ДСП_КлиентСервер</content>
-  <content>CommonModule.ДСП_СерверПовтИсп</content>
+  <content>CommonModule.ДСП_Клиент</content>
   <subsystems>ДСП_ОценкаПроизводительности</subsystems>
 </mdclass:Subsystem>
