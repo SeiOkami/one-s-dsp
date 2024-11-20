@@ -24,7 +24,6 @@
   <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
   <namePrefix>ДСП_</namePrefix>
   <configurationExtensionCompatibilityMode>8.3.21</configurationExtensionCompatibilityMode>
-  <configurationExtensionPurpose>Customization</configurationExtensionPurpose>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
@@ -53,8 +52,9 @@
   <commonModules>CommonModule.ДСП_ВызовСервера</commonModules>
   <commonModules>CommonModule.ДСП_Клиент</commonModules>
   <commonModules>CommonModule.ДСП_КлиентСервер</commonModules>
-  <commonModules>CommonModule.ДСП_КлиентСерверПовтИсп</commonModules>
+  <commonModules>CommonModule.ДСП_ПовтИсп</commonModules>
   <commonModules>CommonModule.ДСП_Сервер</commonModules>
+  <commonModules>CommonModule.ОценкаПроизводительностиКлиент</commonModules>
   <commonForms>CommonForm.ФормаОтчета</commonForms>
   <catalogs>Catalog.КлючевыеОперации</catalogs>
   <catalogs>Catalog.ПрофилиКлючевыхОпераций</catalogs>
