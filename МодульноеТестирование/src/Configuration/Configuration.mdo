@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f41ef34c-b010-4609-affb-f8dfcdf2a23b">
+  <name>ДоработкиСтандартныхПодсистем_Тесты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доработки стандартных подсистем (ДСП) - ТЕСТЫ</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <defaultLanguage>Checked</defaultLanguage>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+    <compatibilityMode>Checked</compatibilityMode>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="c00bc3af-fb2b-4b61-a086-7cb4866c08c2"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="f4ee493a-1673-471a-9e3b-ba329116e58a"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="baf9a232-c5b0-4faa-beaa-0558fedfee78"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="8b8a49a8-3cc1-4c86-97ec-884328746078"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="d226b962-9968-4e4f-893c-967fc466e0a1"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="a2af7848-7d3c-4559-b207-71bef93eab26"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="aa7a6430-55ea-45c2-86a3-658652c2c7e6"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>ДСПТ_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.21</configurationExtensionCompatibilityMode>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
+  <compatibilityMode>8.3.21</compatibilityMode>
+  <languages uuid="9c222916-b735-4b6b-bbd0-7f7d4fdc59f9">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <commonModules>CommonModule.ДСПТ_Движок</commonModules>
+  <commonModules>CommonModule.ДСПТ_Модули</commonModules>
+  <commonModules>CommonModule.ДСПТ_Общее</commonModules>
+  <commonModules>CommonModule.ДСПТ_Тесты_ДСП_КлиентСервер</commonModules>
+</mdclass:Configuration>
