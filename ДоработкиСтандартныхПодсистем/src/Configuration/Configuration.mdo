@@ -64,5 +64,4 @@
   <catalogs>Catalog.ПрофилиКлючевыхОпераций</catalogs>
   <dataProcessors>DataProcessor.ДСП_ИменованияКлючевыхОпераций</dataProcessors>
   <dataProcessors>DataProcessor.ДСП_Настройки</dataProcessors>
-  <dataProcessors>DataProcessor.ДСП_ОценкаПроизводительности</dataProcessors>
 </mdclass:Configuration>
