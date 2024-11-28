@@ -14,4 +14,28 @@
   </extension>
   <useStandardCommands>true</useStandardCommands>
   <checkUnique>true</checkUnique>
+  <tabularSections uuid="438e6bb2-b3a0-4a57-b70c-6a3ffa91ed17" extendedConfigurationObject="7d223aab-d4f6-41d5-a701-6fe03517cf50">
+    <producedTypes>
+      <objectType typeId="d7baf5db-e390-4aac-947b-c168bf553fff" valueTypeId="31de6090-c284-4989-b134-46584bfaf6d4"/>
+      <rowType typeId="a88071e4-acfc-4b1c-80e1-9ab27a6f489a" valueTypeId="ead0648d-9676-4a78-b7eb-5d276d24b6a8"/>
+    </producedTypes>
+    <name>КлючевыеОперацииПрофиля</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="2a72eed6-00c7-439e-9cd3-ebcbd59359d4" extendedConfigurationObject="631cdd15-eb1f-4903-9073-4de3911ba2e6">
+      <name>КлючеваяОперация</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>CatalogRef.КлючевыеОперации</type>
+          </types>
+        </typeExtension>
+      </extension>
+    </attributes>
+  </tabularSections>
 </mdclass:Catalog>

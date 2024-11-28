@@ -56,8 +56,13 @@
   <commonModules>CommonModule.ДСП_Сервер</commonModules>
   <commonModules>CommonModule.ОценкаПроизводительностиКлиент</commonModules>
   <commonForms>CommonForm.ФормаОтчета</commonForms>
+  <catalogs>Catalog.ВариантыОтчетов</catalogs>
+  <catalogs>Catalog.ДополнительныеОтчетыИОбработки</catalogs>
+  <catalogs>Catalog.ИдентификаторыОбъектовМетаданных</catalogs>
+  <catalogs>Catalog.ИдентификаторыОбъектовРасширений</catalogs>
   <catalogs>Catalog.КлючевыеОперации</catalogs>
   <catalogs>Catalog.ПрофилиКлючевыхОпераций</catalogs>
+  <dataProcessors>DataProcessor.ДСП_ИменованияКлючевыхОпераций</dataProcessors>
   <dataProcessors>DataProcessor.ДСП_Настройки</dataProcessors>
   <dataProcessors>DataProcessor.ДСП_ОценкаПроизводительности</dataProcessors>
 </mdclass:Configuration>
