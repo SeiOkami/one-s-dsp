@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Основной</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КлючеваяОперация</dataPath>
+			<field>КлючеваяОперация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключевая операция</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.КлючевыеОперации</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПервыйДеньИстории</dataPath>
+			<field>ПервыйДеньИстории</field>
+			<valueType>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоследнийДеньИстории</dataPath>
+			<field>ПоследнийДеньИстории</field>
+			<valueType>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПервыйДеньЗамеров</dataPath>
+			<field>ПервыйДеньЗамеров</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Первый день замеров</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоследнийДеньЗаполнения</dataPath>
+			<field>ПоследнийДеньЗаполнения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последний день заполнения</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПервыйДеньЗаполнения</dataPath>
+			<field>ПервыйДеньЗаполнения</field>
+			<valueType>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДлительностьФормирования</dataPath>
+			<field>ДлительностьФормирования</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Длительность формирования</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Time</v8:DateFractions>
+				</v8:DateQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КлючВарианта</dataPath>
+			<field>КлючВарианта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ варианта</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>256</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолноеИмя</dataPath>
+			<field>ПолноеИмя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное имя</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыполненСОшибкой</dataPath>
+			<field>ВыполненСОшибкой</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнен с ошибкой</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:boolean</v8:Type>
+			</valueType>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВЫРАЗИТЬ(КлючевыеОперации.КлючеваяОперация КАК Справочник.КлючевыеОперации) КАК КлючеваяОперация,
+	КлючевыеОперации.ПолноеИмя КАК ПолноеИмя,
+	КлючевыеОперации.КлючВарианта КАК КлючВарианта,
+	МИНИМУМ(НАЧАЛОПЕРИОДА(ВЫРАЗИТЬ(ДанныеИФО.НачалоФормирования КАК ДАТА), ДЕНЬ)) КАК ПервыйДеньИстории,
+	МАКСИМУМ(НАЧАЛОПЕРИОДА(ВЫРАЗИТЬ(ДанныеИФО.НачалоФормирования КАК ДАТА), ДЕНЬ)) КАК ПоследнийДеньИстории,
+	ВЫБОР
+		КОГДА &amp;НачалоПериода МЕЖДУ ДАТАВРЕМЯ(1, 1, 1) И МИНИМУМ(НАЧАЛОПЕРИОДА(ВЫРАЗИТЬ(ДанныеИФО.НачалоФормирования КАК ДАТА), ДЕНЬ))
+			ТОГДА МИНИМУМ(НАЧАЛОПЕРИОДА(ВЫРАЗИТЬ(ДанныеИФО.НачалоФормирования КАК ДАТА), ДЕНЬ))
+		ИНАЧЕ &amp;НачалоПериода
+	КОНЕЦ КАК ПервыйДеньЗаполнения
+ПОМЕСТИТЬ ВТ_СрезИФО
+ИЗ
+	_РегистрИФО_ КАК ДанныеИФО
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТ_КлючевыеОперации КАК КлючевыеОперации
+		ПО ДанныеИФО.ПолноеИмя = КлючевыеОперации.ПолноеИмя
+			И ДанныеИФО.КлючВарианта = КлючевыеОперации.КлючВарианта
+ГДЕ
+	ДанныеИФО.НачалоФормирования &gt;= &amp;НачалоПериода
+	И ДанныеИФО.НачалоФормирования &lt;= ВЫБОР
+			КОГДА &amp;КонецПериода = ДАТАВРЕМЯ(1, 1, 1)
+				ТОГДА ДАТАВРЕМЯ(3999, 1, 1)
+			ИНАЧЕ &amp;КонецПериода
+		КОНЕЦ
+{ГДЕ
+	ДанныеИФО.ДлительностьФормирования КАК ДлительностьФормирования,
+	(НЕ ДанныеИФО.Успех) КАК ВыполненСОшибкой}
+
+СГРУППИРОВАТЬ ПО
+	ВЫРАЗИТЬ(КлючевыеОперации.КлючеваяОперация КАК Справочник.КлючевыеОперации),
+	КлючевыеОперации.ПолноеИмя,
+	КлючевыеОперации.КлючВарианта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_СрезИФО.КлючеваяОперация КАК КлючеваяОперация,
+	ВТ_СрезИФО.ПолноеИмя КАК ПолноеИмя,
+	ВТ_СрезИФО.КлючВарианта КАК КлючВарианта,
+	ВТ_СрезИФО.ПервыйДеньИстории КАК ПервыйДеньИстории,
+	ВТ_СрезИФО.ПоследнийДеньИстории КАК ПоследнийДеньИстории,
+	ВТ_СрезИФО.ПервыйДеньЗаполнения КАК ПервыйДеньЗаполнения,
+	МИНИМУМ(НАЧАЛОПЕРИОДА(ЕСТЬNULL(ЗамерыВремени.ДатаЗаписиНачалоЧаса, ДАТАВРЕМЯ(1, 1, 1)), ДЕНЬ)) КАК ПервыйДеньЗамеров,
+	ВЫБОР
+		КОГДА &amp;КонецПериода = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА МИНИМУМ(КОНЕЦПЕРИОДА(ЕСТЬNULL(ДОБАВИТЬКДАТЕ(ЗамерыВремени.ДатаЗаписиНачалоЧаса, ДЕНЬ, -1), ВТ_СрезИФО.ПоследнийДеньИстории), ДЕНЬ))
+		КОГДА МИНИМУМ(КОНЕЦПЕРИОДА(ЕСТЬNULL(ДОБАВИТЬКДАТЕ(ЗамерыВремени.ДатаЗаписиНачалоЧаса, ДЕНЬ, -1), ВТ_СрезИФО.ПоследнийДеньИстории), ДЕНЬ)) &lt;= &amp;КонецПериода
+			ТОГДА МИНИМУМ(КОНЕЦПЕРИОДА(ЕСТЬNULL(ДОБАВИТЬКДАТЕ(ЗамерыВремени.ДатаЗаписиНачалоЧаса, ДЕНЬ, -1), ВТ_СрезИФО.ПоследнийДеньИстории), ДЕНЬ))
+		ИНАЧЕ &amp;КонецПериода
+	КОНЕЦ КАК ПоследнийДеньЗаполнения
+ИЗ
+	ВТ_СрезИФО КАК ВТ_СрезИФО
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗамерыВремени КАК ЗамерыВремени
+		ПО ВТ_СрезИФО.КлючеваяОперация = ЗамерыВремени.КлючеваяОперация
+
+СГРУППИРОВАТЬ ПО
+	ВТ_СрезИФО.КлючеваяОперация,
+	ВТ_СрезИФО.ПервыйДеньИстории,
+	ВТ_СрезИФО.ПоследнийДеньИстории,
+	ВТ_СрезИФО.ПервыйДеньЗаполнения,
+	ВТ_СрезИФО.ПолноеИмя,
+	ВТ_СрезИФО.КлючВарианта
+
+ИМЕЮЩИЕ
+	ВТ_СрезИФО.ПервыйДеньЗаполнения &lt; МИНИМУМ(НАЧАЛОПЕРИОДА(ЕСТЬNULL(ЗамерыВремени.ДатаЗаписиНачалоЧаса, ДАТАВРЕМЯ(3999, 1, 1)), ДЕНЬ)) И
+	ВТ_СрезИФО.ПервыйДеньЗаполнения &lt; ВЫБОР
+		КОГДА &amp;КонецПериода = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА МИНИМУМ(КОНЕЦПЕРИОДА(ЕСТЬNULL(ДОБАВИТЬКДАТЕ(ЗамерыВремени.ДатаЗаписиНачалоЧаса, ДЕНЬ, -1), ВТ_СрезИФО.ПоследнийДеньИстории), ДЕНЬ))
+		КОГДА МИНИМУМ(КОНЕЦПЕРИОДА(ЕСТЬNULL(ДОБАВИТЬКДАТЕ(ЗамерыВремени.ДатаЗаписиНачалоЧаса, ДЕНЬ, -1), ВТ_СрезИФО.ПоследнийДеньИстории), ДЕНЬ)) &lt;= &amp;КонецПериода
+			ТОГДА МИНИМУМ(КОНЕЦПЕРИОДА(ЕСТЬNULL(ДОБАВИТЬКДАТЕ(ЗамерыВремени.ДатаЗаписиНачалоЧаса, ДЕНЬ, -1), ВТ_СрезИФО.ПоследнийДеньИстории), ДЕНЬ))
+		ИНАЧЕ &amp;КонецПериода
+	КОНЕЦ</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>Пометка</dataPath>
+		<expression>Истина</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пометка</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодЗаполнения.ДатаНачала</expression>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодЗаполнения.ДатаОкончания</expression>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ПериодЗаполнения</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период заполнения</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>Профили</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Профили</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ПрофилиКлючевыхОпераций</v8:Type>
+		</valueType>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Пометка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КлючеваяОперация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПервыйДеньЗамеров</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПервыйДеньЗаполнения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПервыйДеньИстории</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоследнийДеньЗаполнения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоследнийДеньИстории</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПолноеИмя</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КлючВарианта</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">ДлительностьФормирования</dcsset:left>
+					<dcsset:comparisonType>Greater</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:dateTime">0001-01-01T00:00:03</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">ВыполненСОшибкой</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+				</dcsset:item>
+				<dcsset:userSettingID>5d7976c2-6c7f-4432-8970-c00d119d977b</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодЗаполнения</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisYear</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>d071f32e-2af8-4c56-bcd8-d481e2498726</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Профили</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>54b49917-b903-4ee1-b42c-09d9ef51f064</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

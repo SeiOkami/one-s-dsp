@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КлючеваяОперация</dataPath>
+			<field>КлючеваяОперация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключевая операция</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.КлючевыеОперации</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектМетаданных</dataPath>
+			<field>ОбъектМетаданных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект метаданных</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КлючВарианта</dataPath>
+			<field>КлючВарианта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ варианта</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>256</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПолноеИмя</dataPath>
+			<field>ПолноеИмя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное имя</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВЗ.КлючеваяОперация КАК КлючеваяОперация,
+	ВЗ.ОбъектМетаданных КАК ПолноеИмя,
+	СОКРЛП(ВЫРАЗИТЬ(ПОДСТРОКА(ВЗ.Имя, ДЛИНАСТРОКИ(ВЗ.ОбъектМетаданных) + 2, ДЛИНАСТРОКИ(ВЗ.Имя) - ДЛИНАСТРОКИ(ВЗ.ОбъектМетаданных) - 14) КАК СТРОКА(256))) КАК КлючВарианта
+{ВЫБРАТЬ
+	КлючеваяОперация.*,
+	ПолноеИмя,
+	КлючВарианта}
+ИЗ
+	(ВЫБРАТЬ
+		КлючевыеОперации.Ссылка КАК КлючеваяОперация,
+		КлючевыеОперации.Имя КАК Имя,
+		СОКРЛП(ВЫРАЗИТЬ(ЛЕВ(КлючевыеОперации.Имя, СТРНАЙТИ(КлючевыеОперации.Имя, ".") - 1) КАК СТРОКА(150))) + СОКРЛП(ВЫРАЗИТЬ(ПОДСТРОКА(КлючевыеОперации.Имя, СТРНАЙТИ(КлючевыеОперации.Имя, "."), СТРНАЙТИ(СТРЗАМЕНИТЬ(ПОДСТРОКА(КлючевыеОперации.Имя, СТРНАЙТИ(КлючевыеОперации.Имя, ".") + 1, 500), ":", "."), ".")) КАК СТРОКА(500))) КАК ОбъектМетаданных
+	ИЗ
+		Справочник.КлючевыеОперации КАК КлючевыеОперации
+	ГДЕ
+		ВРЕГ(СОКРЛП(ВЫРАЗИТЬ(ЛЕВ(КлючевыеОперации.Имя, СТРНАЙТИ(КлючевыеОперации.Имя, ".") - 1) КАК СТРОКА(150)))) В ("ОТЧЕТ", "ВНЕШНИЙОТЧЕТ")
+		И ВРЕГ(ВЫРАЗИТЬ(ПРАВ(КлючевыеОперации.Имя, 13) КАК СТРОКА(13))) В (".ФОРМИРОВАНИЕ", ":ФОРМИРОВАНИЕ")
+	{ГДЕ
+		(КлючевыеОперации.Ссылка В
+				(ВЫБРАТЬ
+					КлючевыеОперацииПрофиля.КлючеваяОперация
+				ИЗ
+					Справочник.ПрофилиКлючевыхОпераций.КлючевыеОперацииПрофиля КАК КлючевыеОперацииПрофиля
+				ГДЕ
+					КлючевыеОперацииПрофиля.Ссылка В (&amp;Профили)))}) КАК ВЗ
+ГДЕ
+	СОКРЛП(ВЫРАЗИТЬ(ПОДСТРОКА(ВЗ.Имя, ДЛИНАСТРОКИ(ВЗ.ОбъектМетаданных) + 2, ДЛИНАСТРОКИ(ВЗ.Имя) - ДЛИНАСТРОКИ(ВЗ.ОбъектМетаданных) - 14) КАК СТРОКА(256))) &gt; ""
+{ГДЕ
+	ВЗ.КлючеваяОперация.*,
+	ВЗ.ОбъектМетаданных}</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<parameter>
+		<name>Профили</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Профили</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ПрофилиКлючевыхОпераций</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КлючеваяОперация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПолноеИмя</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КлючВарианта</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Профили</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

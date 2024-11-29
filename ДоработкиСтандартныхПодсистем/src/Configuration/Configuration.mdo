@@ -61,7 +61,10 @@
   <catalogs>Catalog.ИдентификаторыОбъектовМетаданных</catalogs>
   <catalogs>Catalog.ИдентификаторыОбъектовРасширений</catalogs>
   <catalogs>Catalog.КлючевыеОперации</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.ПрофилиКлючевыхОпераций</catalogs>
   <dataProcessors>DataProcessor.ДСП_ИменованияКлючевыхОпераций</dataProcessors>
   <dataProcessors>DataProcessor.ДСП_Настройки</dataProcessors>
+  <dataProcessors>DataProcessor.ДСП_ПереносЗамеровИзИФО</dataProcessors>
+  <informationRegisters>InformationRegister.ЗамерыВремени</informationRegisters>
 </mdclass:Configuration>
