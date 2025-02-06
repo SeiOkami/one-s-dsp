@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4be2cd54-6466-48c7-ae1f-77f6d1780965">
+  <producedTypes>
+    <objectType typeId="e8bb0496-9db1-45c3-9cb1-563e2d138696" valueTypeId="9495bcde-b6c6-44a6-a5dd-1a8b9e7592b9"/>
+    <managerType typeId="c14b1cd6-c68b-4d77-b891-c20e75e13e3d" valueTypeId="b5493042-9f4b-46f2-9b15-0b4d9e85e656"/>
+  </producedTypes>
+  <name>ДСП_ПримерОтчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пример отчета (ДСП)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДСП_ПримерОтчета.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <forms uuid="aac03c71-b061-4488-b737-8e2db501b852">
+    <name>ДСП_ФормаКлиентскихСобытий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон формы клиентских событий вариантов отчетов (ДСП)</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="fbfb0d43-6119-413b-a578-54bdd0c5db53">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

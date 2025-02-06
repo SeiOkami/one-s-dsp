@@ -49,12 +49,16 @@
   <commonPictures>CommonPicture.СохранитьКак</commonPictures>
   <commonPictures>CommonPicture.Сумма</commonPictures>
   <commonPictures>CommonPicture.ЭлектронноеПисьмо</commonPictures>
+  <commonModules>CommonModule.ВариантыОтчетовКлиентСервер</commonModules>
+  <commonModules>CommonModule.ВариантыОтчетовПереопределяемый</commonModules>
   <commonModules>CommonModule.ДСП_ВызовСервера</commonModules>
   <commonModules>CommonModule.ДСП_Клиент</commonModules>
   <commonModules>CommonModule.ДСП_КлиентСервер</commonModules>
   <commonModules>CommonModule.ДСП_ПовтИсп</commonModules>
   <commonModules>CommonModule.ДСП_Сервер</commonModules>
+  <commonModules>CommonModule.ОтчетыКлиентПереопределяемый</commonModules>
   <commonModules>CommonModule.ОценкаПроизводительностиКлиент</commonModules>
+  <settingsStorages>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorages>
   <commonForms>CommonForm.ФормаОтчета</commonForms>
   <catalogs>Catalog.ВариантыОтчетов</catalogs>
   <catalogs>Catalog.ДополнительныеОтчетыИОбработки</catalogs>
@@ -63,6 +67,7 @@
   <catalogs>Catalog.КлючевыеОперации</catalogs>
   <catalogs>Catalog.Пользователи</catalogs>
   <catalogs>Catalog.ПрофилиКлючевыхОпераций</catalogs>
+  <reports>Report.ДСП_ПримерОтчета</reports>
   <dataProcessors>DataProcessor.ДСП_ИменованияКлючевыхОпераций</dataProcessors>
   <dataProcessors>DataProcessor.ДСП_Настройки</dataProcessors>
   <dataProcessors>DataProcessor.ДСП_ПереносЗамеровИзИФО</dataProcessors>
