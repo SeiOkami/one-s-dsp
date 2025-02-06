@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3b8ceae-1fe3-4f18-b049-dd425723eeb8">
+  <name>ДСП_Логотип</name>
+  <synonym>
+    <key>ru</key>
+    <value>Логотип</value>
+  </synonym>
+</mdclass:CommonPicture>

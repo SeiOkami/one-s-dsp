@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5135711c-3833-41df-b541-d019ad3935a6">
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5135711c-3833-41df-b541-d019ad3935a6">
   <name>ДСП_ДоработкиСтандартныхПодсистем</name>
   <synonym>
     <key>ru</key>
@@ -7,6 +7,9 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ДСП_Логотип</picture>
+  </picture>
   <content>DataProcessor.ДСП_Настройки</content>
   <content>CommonModule.ДСП_Сервер</content>
   <content>CommonModule.ДСП_ВызовСервера</content>

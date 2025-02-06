@@ -28,7 +28,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>https://github.com/SeiOkami</vendor>
-  <version>0.0.1</version>
+  <version>1.1.1</version>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
   <compatibilityMode>8.3.21</compatibilityMode>
@@ -41,14 +41,7 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.ДСП_ДоработкиСтандартныхПодсистем</subsystems>
-  <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
-  <styleItems>StyleItem.ИтогиФонГруппы</styleItems>
-  <commonPictures>CommonPicture.ВыбратьВариантОтчета</commonPictures>
-  <commonPictures>CommonPicture.ОтменитьДействие</commonPictures>
-  <commonPictures>CommonPicture.ПовторитьДействие</commonPictures>
-  <commonPictures>CommonPicture.СохранитьКак</commonPictures>
-  <commonPictures>CommonPicture.Сумма</commonPictures>
-  <commonPictures>CommonPicture.ЭлектронноеПисьмо</commonPictures>
+  <commonPictures>CommonPicture.ДСП_Логотип</commonPictures>
   <commonModules>CommonModule.ВариантыОтчетовКлиентСервер</commonModules>
   <commonModules>CommonModule.ВариантыОтчетовПереопределяемый</commonModules>
   <commonModules>CommonModule.ДСП_ВызовСервера</commonModules>

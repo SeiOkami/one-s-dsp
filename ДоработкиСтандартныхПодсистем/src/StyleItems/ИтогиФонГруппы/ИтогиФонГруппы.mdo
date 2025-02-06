@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f4d9700d-c9a1-4a46-9054-366779993eeb" extendedConfigurationObject="d5a5f53b-9cd5-4036-a379-31680cec3c24">
-  <name>ИтогиФонГруппы</name>
-  <objectBelonging>Adopted</objectBelonging>
-  <extension xsi:type="mdclassExtension:StyleItemExtension">
-    <extendedConfigurationObject>Checked</extendedConfigurationObject>
-    <type>Checked</type>
-  </extension>
-</mdclass:StyleItem>
